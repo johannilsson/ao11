@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    >
+    <TextView 
+        android:id="@+id/priceview_value"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="37"
+        android:textColor="@color/rent"
+        android:textSize="30sp"
+        />
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/priceview_currency"
+        android:paddingLeft="5dip"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="SEK"
+        android:textSize="30sp"
+        />
+</LinearLayout>
