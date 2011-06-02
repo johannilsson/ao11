@@ -2,6 +2,9 @@ package com.markupartist.demo.ao11;
 
 import java.util.Random;
 
+import com.markupartist.demo.ao11.demo4.Money;
+import com.markupartist.demo.ao11.demo4.PriceView;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,10 +12,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.markupartist.demo.ao11.demo3.Money;
-import com.markupartist.demo.ao11.demo3.PriceView;
-
-public class Demo3Activity extends Activity implements OnClickListener {
+public class Demo4Activity extends Activity implements OnClickListener {
     private static final Random RANDOM = new Random();
     private static final Money MONEY_1 = new Money("37", "SEK");
     private static final Money MONEY_2 = new Money("19", "SEK");
@@ -23,11 +23,11 @@ public class Demo3Activity extends Activity implements OnClickListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.demo3);
+        setContentView(R.layout.demo4);
 
-        NavigationBar navigation = (NavigationBar) findViewById(R.id.navigation);
-        navigation.setBackEnabled()
-            .setNextEnabled(new Intent(this, Demo4Activity.class));
+        ((NavigationBar) findViewById(R.id.navigation))
+            .setBackEnabled()
+            .setNextEnabled(new Intent(this, Demo5Activity.class));
 
         Button randomButton = (Button) findViewById(R.id.randomize);
         randomButton.setText(R.string.more_money);
@@ -48,6 +48,5 @@ public class Demo3Activity extends Activity implements OnClickListener {
 
     void initPriceTextView() {
         mPriceView = (PriceView) findViewById(R.id.price);
-        mPriceView.setMoney(MONEY_1);
     }
 }
