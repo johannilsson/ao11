@@ -3,6 +3,7 @@ package com.markupartist.demo.ao11;
 import java.util.Random;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -19,14 +20,12 @@ public class Demo2Activity extends Activity implements OnClickListener {
         setContentView(R.layout.demo2);
 
         NavigationBar navigation = (NavigationBar) findViewById(R.id.navigation);
-        navigation.setBackEnabled();
+        navigation
+            .setBackEnabled()
+            .setNextEnabled(new Intent(this, Demo3Activity.class));
 
         findViewById(R.id.randomize).setOnClickListener(this);
         initPriceTextView();
-    }
-
-    void refreshPriceViews(CharSequence text) {
-        mPriceTextView.setText(text);
     }
 
     @Override
@@ -34,7 +33,7 @@ public class Demo2Activity extends Activity implements OnClickListener {
         final int id = v.getId();
         switch (id) {
         case R.id.randomize:
-            refreshPriceViews(RANDOM.nextBoolean() ? "Free" : "37 SEK");
+            mPriceTextView.setText(RANDOM.nextBoolean() ? "Free" : "37 SEK");
             break;
         }
     }

@@ -29,16 +29,12 @@ public class Demo1Activity extends Activity implements OnClickListener {
         initPriceTextView();
     }
 
-    void refreshPriceViews(CharSequence text) {
-        mPriceTextView.setText(text);
-    }
-
     @Override
     public void onClick(View v) {
         final int id = v.getId();
         switch (id) {
         case R.id.randomize:
-            refreshPriceViews(RANDOM.nextBoolean() ?
+            mPriceTextView.setText(RANDOM.nextBoolean() ?
                     getText(R.string.free) : "37 SEK");
             break;
         }
