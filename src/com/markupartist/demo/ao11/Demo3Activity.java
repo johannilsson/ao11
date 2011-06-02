@@ -2,15 +2,14 @@ package com.markupartist.demo.ao11;
 
 import java.util.Random;
 
-import com.markupartist.demo.ao11.demo3.Money;
-import com.markupartist.demo.ao11.demo3.PriceView;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.TextView;
+
+import com.markupartist.demo.ao11.demo3.Money;
+import com.markupartist.demo.ao11.demo3.PriceView;
 
 public class Demo3Activity extends Activity implements OnClickListener {
     private static final Random RANDOM = new Random();
