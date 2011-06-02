@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ao11</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="free_or_rent">Free or Rent</string>
+    <string name="free">Free</string>
+    <string name="rent">Rent</string>
+
+    <!-- Demos -->
+    <string name="demo_1">Demo 1</string>
+    <string name="demo_2">Demo 2</string>
+    <string name="demo_3">Demo 3</string>
+    <string name="demo_4">Demo 4</string>
+</resources>
