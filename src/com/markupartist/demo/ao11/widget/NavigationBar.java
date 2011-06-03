@@ -1,4 +1,8 @@
-package com.markupartist.demo.ao11;
+package com.markupartist.demo.ao11.widget;
+
+import com.markupartist.demo.ao11.R;
+import com.markupartist.demo.ao11.R.id;
+import com.markupartist.demo.ao11.R.layout;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;

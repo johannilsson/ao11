@@ -11,6 +11,7 @@ import android.widget.Button;
 
 import com.markupartist.demo.ao11.demo3.Money;
 import com.markupartist.demo.ao11.demo3.PriceView;
+import com.markupartist.demo.ao11.widget.NavigationBar;
 
 public class Demo3Activity extends Activity implements OnClickListener {
     private static final Random RANDOM = new Random();

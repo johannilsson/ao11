@@ -2,6 +2,8 @@ package com.markupartist.demo.ao11;
 
 import java.util.Random;
 
+import com.markupartist.demo.ao11.widget.NavigationBar;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

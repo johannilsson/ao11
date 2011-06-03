@@ -3,7 +3,7 @@
     android:layout_width="fill_parent" 
     android:layout_height="fill_parent"
     >
-    <com.markupartist.demo.ao11.NavigationBar
+    <com.markupartist.demo.ao11.widget.NavigationBar
         android:id="@+id/navigation"
         style="@style/NavigationBar"
         />

@@ -4,6 +4,7 @@ import java.util.Random;
 
 import com.markupartist.demo.ao11.demo4.Money;
 import com.markupartist.demo.ao11.demo4.PriceView;
+import com.markupartist.demo.ao11.widget.NavigationBar;
 
 import android.app.Activity;
 import android.content.Intent;

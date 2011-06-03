@@ -1,5 +1,7 @@
 package com.markupartist.demo.ao11;
 
+import com.markupartist.demo.ao11.widget.NavigationBar;
+
 import android.app.Activity;
 import android.os.Bundle;
 
