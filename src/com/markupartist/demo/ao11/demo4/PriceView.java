@@ -10,7 +10,7 @@ import com.markupartist.demo.ao11.R;
 
 public class PriceView extends LinearLayout {
 
-    private TextView mValue;
+    private TextView mAmount;
     private TextView mCurrency;
 
     public PriceView(Context context, AttributeSet attrs) {
@@ -21,17 +21,17 @@ public class PriceView extends LinearLayout {
         LinearLayout priceView = (LinearLayout) inflater.inflate(
                 R.layout.demo4_priceview, this, true);
 
-        mValue = (TextView) priceView.findViewById(R.id.priceview_amount);
+        mAmount = (TextView) priceView.findViewById(R.id.priceview_amount);
         mCurrency = (TextView) priceView.findViewById(R.id.priceview_currency);
 
         /*if (isInEditMode()) {
-            mValue.setText("10");
+            mAmount.setText("10");
             mCurrency.setText("SEK");
         }*/
     }
 
     public void setMoney(Money money) {
-        mValue.setText(money.getAmount());
+        mAmount.setText(money.getAmount());
         mCurrency.setText(money.getCurrency());
     }
 }
