@@ -3,9 +3,10 @@
       package="com.markupartist.demo.ao11"
       android:versionCode="1"
       android:versionName="1.0">
-
-
-    <application android:icon="@drawable/icon" android:label="@string/app_name">
+    <application android:icon="@drawable/icon"
+                 android:label="@string/app_name"
+                 android:theme="@style/AO11Theme"
+                 >
         <activity android:name=".demo1.Demo1Activity"
                   android:label="@string/demo_1">
             <intent-filter>
@@ -23,7 +24,12 @@
                   android:label="@string/demo_4">
         </activity>
         <activity android:name=".demo5.Demo5Activity"
-                  android:label="@string/demo_5">
+                  android:label="@string/demo_5"
+                  >
+        </activity>
+        <activity android:name=".demo6.Demo6Activity"
+                  android:label="@string/demo_6"
+                  android:theme="@style/Demo6Theme">
         </activity>
     </application>
 </manifest>

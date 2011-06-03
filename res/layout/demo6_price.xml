@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.markupartist.demo.ao11.demo6.PriceView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res/com.markupartist.demo.ao11"
+    android:id="@+id/price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:amountText="37"
+    app:currencyText="SEK"
+    />
+

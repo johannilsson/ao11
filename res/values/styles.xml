@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AO11Theme" parent="android:style/Theme">
+        <item name="navigationBackground">@color/navigation_background</item>
+        <item name="amountStyle">@style/AmountView</item>
+        <item name="currencyStyle">@style/Demo6CurrencyView</item>
+    </style>
+
+    <style name="Demo6Theme" parent="android:style/Theme.Light">
+        <item name="navigationBackground">@color/green</item>
+        <item name="amountStyle">@style/Demo6AmountView</item>
+        <item name="currencyStyle">@style/Demo6CurrencyView</item>
+    </style>
+
+    <style name="PriceTextView" parent="android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="AmountView" parent="@style/PriceTextView">
+        <item name="android:textColor">@color/rent</item>
+    </style>
+
+    <style name="Demo6AmountView" parent="@style/PriceTextView">
+        <item name="android:textColor">@color/free</item>
+    </style>
+
+    <style name="Demo6CurrencyView" parent="@style/PriceTextView">
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+
     <style name="NavigationBar">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentBottom">true</item>
-        <item name="android:padding">5dip</item>
-        <item name="android:background">#333</item>
+        <item name="android:padding">@dimen/navigation_padding</item>
+        <item name="android:background">?attr/navigationBackground</item>
     </style>
 </resources>

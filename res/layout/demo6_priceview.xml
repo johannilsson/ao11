@@ -1,0 +1,15 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <TextView 
+        android:id="@+id/priceview_amount"
+        style="?attr/amountStyle"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        />
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/priceview_currency"
+        style="?attr/currencyStyle"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        />
+</merge>

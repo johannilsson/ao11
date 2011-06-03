@@ -3,4 +3,6 @@
 <resources>
     <color name="free">#8bc64f</color>
     <color name="rent">#d6468d</color>
+    <color name="navigation_background">#333</color>
+    <color name="green">#ADFF2F</color>
 </resources>

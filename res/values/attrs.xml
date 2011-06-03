@@ -4,4 +4,8 @@
         <attr name="amountText" format="string" localization="suggested" />
         <attr name="currencyText" format="string" localization="suggested" />
     </declare-styleable>
+
+    <attr name="navigationBackground" format="reference|color" />
+    <attr name="amountStyle" format="reference" />
+    <attr name="currencyStyle" format="reference" />
 </resources>

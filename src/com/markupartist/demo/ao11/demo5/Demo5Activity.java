@@ -1,12 +1,12 @@
 package com.markupartist.demo.ao11.demo5;
 
-import com.markupartist.demo.ao11.R;
-import com.markupartist.demo.ao11.R.id;
-import com.markupartist.demo.ao11.R.layout;
-import com.markupartist.demo.ao11.widget.NavigationBar;
-
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+
+import com.markupartist.demo.ao11.R;
+import com.markupartist.demo.ao11.demo6.Demo6Activity;
+import com.markupartist.demo.ao11.widget.NavigationBar;
 
 public class Demo5Activity extends Activity {
 
@@ -17,6 +17,7 @@ public class Demo5Activity extends Activity {
         setContentView(R.layout.demo5);
 
         ((NavigationBar) findViewById(R.id.navigation))
-            .setBackEnabled();
+            .setBackEnabled()
+            .setNextEnabled(new Intent(this, Demo6Activity.class));
     }
 }

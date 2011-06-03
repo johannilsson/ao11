@@ -7,6 +7,7 @@
     <string name="more_money">More Money</string>
     <string name="free">Free</string>
     <string name="rent">Rent</string>
+    <string name="change_theme">Change Theme</string>
 
     <!-- Demos -->
     <string name="demo_1">Demo 1</string>
@@ -14,4 +15,5 @@
     <string name="demo_3">Demo 3</string>
     <string name="demo_4">Demo 4</string>
     <string name="demo_5">Demo 5</string>
+    <string name="demo_6">Demo 6</string>
 </resources>
