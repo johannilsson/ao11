@@ -12,7 +12,7 @@ import com.markupartist.demo.ao11.R;
 
 public class PriceView extends LinearLayout {
 
-    private TextView mValue;
+    private TextView mAmount;
     private TextView mCurrency;
 
     public PriceView(Context context, AttributeSet attrs) {
@@ -23,15 +23,15 @@ public class PriceView extends LinearLayout {
         LinearLayout priceView = (LinearLayout) inflater.inflate(
                 R.layout.demo5_priceview, this, true);
 
-        mValue = (TextView) priceView.findViewById(R.id.priceview_value);
+        mAmount = (TextView) priceView.findViewById(R.id.priceview_amount);
         mCurrency = (TextView) priceView.findViewById(R.id.priceview_currency);
 
         TypedArray array = context.obtainStyledAttributes(
                 attrs, R.styleable.Demo5PriceView, 0, 0);
 
-        String valueText = array.getString(R.styleable.Demo5PriceView_valueText);
+        String valueText = array.getString(R.styleable.Demo5PriceView_amountText);
         if (!TextUtils.isEmpty(valueText)) {
-            mValue.setText(valueText);
+            mAmount.setText(valueText);
         }
         String currencyText = array.getString(R.styleable.Demo5PriceView_currencyText);
         if (!TextUtils.isEmpty(currencyText)) {
@@ -42,7 +42,7 @@ public class PriceView extends LinearLayout {
     }
 
     public void setMoney(Money money) {
-        mValue.setText(money.getValue());
+        mAmount.setText(money.getAmount());
         mCurrency.setText(money.getCurrency());
     }
 }

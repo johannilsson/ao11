@@ -2,14 +2,6 @@ package com.markupartist.demo.ao11.demo1;
 
 import java.util.Random;
 
-import com.markupartist.demo.ao11.R;
-import com.markupartist.demo.ao11.R.color;
-import com.markupartist.demo.ao11.R.id;
-import com.markupartist.demo.ao11.R.layout;
-import com.markupartist.demo.ao11.R.string;
-import com.markupartist.demo.ao11.demo2.Demo2Activity;
-import com.markupartist.demo.ao11.widget.NavigationBar;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +10,10 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
+
+import com.markupartist.demo.ao11.R;
+import com.markupartist.demo.ao11.demo2.Demo2Activity;
+import com.markupartist.demo.ao11.widget.NavigationBar;
 
 public class Demo1Activity extends Activity implements OnClickListener {
     private static final Random RANDOM = new Random();

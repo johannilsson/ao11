@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="Demo5PriceView">
-        <attr name="valueText" format="string" localization="suggested" />
+        <attr name="amountText" format="string" localization="suggested" />
         <attr name="currencyText" format="string" localization="suggested" />
     </declare-styleable>
 </resources>

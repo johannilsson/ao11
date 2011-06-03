@@ -5,7 +5,7 @@
     android:id="@+id/price"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    app:valueText="37"
+    app:amountText="37"
     app:currencyText="SEK"
     />
 

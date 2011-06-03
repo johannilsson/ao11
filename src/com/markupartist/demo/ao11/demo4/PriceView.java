@@ -21,7 +21,7 @@ public class PriceView extends LinearLayout {
         LinearLayout priceView = (LinearLayout) inflater.inflate(
                 R.layout.demo4_priceview, this, true);
 
-        mValue = (TextView) priceView.findViewById(R.id.priceview_value);
+        mValue = (TextView) priceView.findViewById(R.id.priceview_amount);
         mCurrency = (TextView) priceView.findViewById(R.id.priceview_currency);
 
         /*if (isInEditMode()) {
@@ -31,7 +31,7 @@ public class PriceView extends LinearLayout {
     }
 
     public void setMoney(Money money) {
-        mValue.setText(money.getValue());
+        mValue.setText(money.getAmount());
         mCurrency.setText(money.getCurrency());
     }
 }
