@@ -27,13 +27,13 @@ public class PriceView extends LinearLayout {
         mCurrency = (TextView) priceView.findViewById(R.id.priceview_currency);
 
         TypedArray array = context.obtainStyledAttributes(
-                attrs, R.styleable.Demo5PriceView, 0, 0);
+                attrs, R.styleable.PriceView, 0, 0);
 
-        String valueText = array.getString(R.styleable.Demo5PriceView_amountText);
+        String valueText = array.getString(R.styleable.PriceView_amountText);
         if (!TextUtils.isEmpty(valueText)) {
             mAmount.setText(valueText);
         }
-        String currencyText = array.getString(R.styleable.Demo5PriceView_currencyText);
+        String currencyText = array.getString(R.styleable.PriceView_currencyText);
         if (!TextUtils.isEmpty(currencyText)) {
             mCurrency.setText(currencyText);
         }
