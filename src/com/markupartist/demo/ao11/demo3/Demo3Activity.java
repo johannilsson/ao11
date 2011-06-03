@@ -1,4 +1,4 @@
-package com.markupartist.demo.ao11;
+package com.markupartist.demo.ao11.demo3;
 
 import java.util.Random;
 
@@ -9,8 +9,11 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.markupartist.demo.ao11.demo3.Money;
-import com.markupartist.demo.ao11.demo3.PriceView;
+import com.markupartist.demo.ao11.R;
+import com.markupartist.demo.ao11.R.id;
+import com.markupartist.demo.ao11.R.layout;
+import com.markupartist.demo.ao11.R.string;
+import com.markupartist.demo.ao11.demo4.Demo4Activity;
 import com.markupartist.demo.ao11.widget.NavigationBar;
 
 public class Demo3Activity extends Activity implements OnClickListener {

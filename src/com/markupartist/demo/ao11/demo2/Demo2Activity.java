@@ -1,7 +1,11 @@
-package com.markupartist.demo.ao11;
+package com.markupartist.demo.ao11.demo2;
 
 import java.util.Random;
 
+import com.markupartist.demo.ao11.R;
+import com.markupartist.demo.ao11.R.id;
+import com.markupartist.demo.ao11.R.layout;
+import com.markupartist.demo.ao11.demo3.Demo3Activity;
 import com.markupartist.demo.ao11.widget.NavigationBar;
 
 import android.app.Activity;

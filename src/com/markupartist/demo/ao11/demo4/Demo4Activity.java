@@ -1,9 +1,12 @@
-package com.markupartist.demo.ao11;
+package com.markupartist.demo.ao11.demo4;
 
 import java.util.Random;
 
-import com.markupartist.demo.ao11.demo4.Money;
-import com.markupartist.demo.ao11.demo4.PriceView;
+import com.markupartist.demo.ao11.R;
+import com.markupartist.demo.ao11.R.id;
+import com.markupartist.demo.ao11.R.layout;
+import com.markupartist.demo.ao11.R.string;
+import com.markupartist.demo.ao11.demo5.Demo5Activity;
 import com.markupartist.demo.ao11.widget.NavigationBar;
 
 import android.app.Activity;
