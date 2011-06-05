@@ -31,5 +31,8 @@
                   android:label="@string/demo_6"
                   android:theme="@style/Demo6Theme">
         </activity>
+        <activity android:name=".demo7.Demo7Activity"
+                  android:label="@string/demo_7">
+        </activity>
     </application>
 </manifest>
