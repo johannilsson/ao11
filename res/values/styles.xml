@@ -37,4 +37,5 @@
         <item name="android:padding">@dimen/navigation_padding</item>
         <item name="android:background">?attr/navigationBackground</item>
     </style>
+
 </resources>
