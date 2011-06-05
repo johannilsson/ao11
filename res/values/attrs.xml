@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="navigationBackground" format="reference|color" />
+    <attr name="amountStyle" format="reference" />
+    <attr name="currencyStyle" format="reference" />
+
     <declare-styleable name="PriceView">
+        <attr name="amountTextColor" format="color" />
         <attr name="amountText" format="string" localization="suggested" />
         <attr name="currencyText" format="string" localization="suggested" />
     </declare-styleable>
 
-    <attr name="navigationBackground" format="reference|color" />
-    <attr name="amountStyle" format="reference" />
-    <attr name="currencyStyle" format="reference" />
 </resources>
