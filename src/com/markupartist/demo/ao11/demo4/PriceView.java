@@ -24,10 +24,10 @@ public class PriceView extends LinearLayout {
         mAmount = (TextView) priceView.findViewById(R.id.priceview_amount);
         mCurrency = (TextView) priceView.findViewById(R.id.priceview_currency);
 
-        /*if (isInEditMode()) {
-            mAmount.setText("10");
+        if (isInEditMode()) {
+            mAmount.setText("37");
             mCurrency.setText("SEK");
-        }*/
+        }
     }
 
     public void setMoney(Money money) {

@@ -33,17 +33,6 @@ public class Demo1Activity extends Activity implements OnClickListener {
         initPriceTextView();
     }
 
-    @Override
-    public void onClick(View v) {
-        final int id = v.getId();
-        switch (id) {
-        case R.id.randomize:
-            mPriceTextView.setText(RANDOM.nextBoolean() ?
-                    getText(R.string.free) : "37 SEK");
-            break;
-        }
-    }
-
     void initPriceTextView() {
         mPriceTextView = (TextView) findViewById(R.id.price);
         mPriceTextView.addTextChangedListener(new TextWatcher() {
@@ -66,4 +55,14 @@ public class Demo1Activity extends Activity implements OnClickListener {
         });
     }
 
+    @Override
+    public void onClick(View v) {
+        final int id = v.getId();
+        switch (id) {
+        case R.id.randomize:
+            mPriceTextView.setText(RANDOM.nextBoolean() ?
+                    getText(R.string.free) : "37 SEK");
+            break;
+        }
+    }
 }
